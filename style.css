@@ -1,0 +1,77 @@
+       body {
+           margin: 0 auto;
+       }
+       
+       .ball>h1 {
+           text-align: center;
+           font-style: italic;
+           margin-top: 30%;
+       }
+       
+       .ball {
+           height: 200px;
+           width: 200px;
+           border-radius: 200px;
+           margin: auto;
+           background-color: #b54827;
+           position: relative;
+           /*animation ball*/
+           animation-name: ball;
+           animation-duration: 1s;
+           animation-iteration-count: infinite;
+           animation-timing-function: ease-out;
+           animation-direction: alternate;
+           border: 5px solid #333;
+       }
+       
+       .bg-image {
+           background-image: url(https://images.unsplash.com/photo-1520116610688-c1d0d0cdfb50?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80);
+           height: 150vh;
+           background-repeat: no-repeat;
+           background-size: cover;
+           padding: 200px;
+       }
+       
+       .color {
+           text-align: center;
+           padding-top: 35%;
+           font-family: 'Parisienne', cursive;
+           font-size: 25px;
+       }
+       
+       .shadow {
+           margin: auto;
+           margin-top: 850px;
+           position: relative;
+           border-radius: 150px;
+           width: 110px;
+           height: 110px;
+           background-image: linear-gradient(to bottom left, #333 0%, #333 100%);
+           transform: scale(2, 0.3);
+           /*css animations*/
+           animation-name: shadow;
+           animation-duration: 1s;
+           animation-iteration-count: infinite;
+           animation-timing-function: ease-out;
+           animation-direction: alternate;
+       }
+       
+       @keyframes ball {
+           from {
+               top: -200px;
+           }
+           to {
+               top: 893px;
+           }
+       }
+       
+       @keyframes shadow {
+           from {
+               width: 10px;
+               height: 10px;
+           }
+           to {
+               width: 110px;
+               height: 110px;
+           }
+       }
